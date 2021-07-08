@@ -10,7 +10,7 @@ import Pusher from "pusher"
 
 //app config
 const app=express();
-const port="8000";
+const port=process.env.PORT || "8000";
 const db_url="mongodb+srv://user:nickcrud@cluster0.h0nyt.mongodb.net/WHATSAPP-DB?retryWrites=true&w=majority"
 //nickcrud (password of db)
 const pusher = new Pusher({
